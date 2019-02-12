@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 4 Feb, 2019 3:39:09 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+<class name="University" table="UNIVERSITY">
+    <meta attribute="class-description">
+	This class contains the University Details
+	</meta>
+    <id name="id" type="int" column="id">
+	<generator class="native"/>
+	</id>
+	<property name="street" column="street_name" type="string"/>
+	<property name="city" column="city_name" type="string"/>
+	<property name="state" column="state_name" type="string"/>
+	<property name="zipcode" column="zipcode" type="string"/>
+	<property name="country" column="country" type="string"/>
+    </class>
+</hibernate-mapping>
+
